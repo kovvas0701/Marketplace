@@ -1,0 +1,65 @@
+/* Paleta de Colores */
+:root {
+  --navy-blue: #001F3F;
+  --beige: #F5F5DC;
+  --white: #FFFFFF;
+}
+
+/* Estilos generales */
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: var(--navy-blue);
+}
+
+.welcome-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--navy-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
+}
+
+.welcome-content {
+  max-width: 600px;
+}
+
+.products-container {
+  background-color: var(--beige);
+  padding: 50px 0;
+}
+
+.contact-container {
+  background-color: var(--white);
+}
+
+/* Implementación de Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Versión para Tablet */
+@media (max-width: 768px) {
+  .welcome-container {
+      height: 80vh;
+  }
+}
+
+/* Versión para Dispositivos Móviles */
+@media (max-width: 576px) {
+  .welcome-content {
+      max-width: 80%;
+  }
+}
